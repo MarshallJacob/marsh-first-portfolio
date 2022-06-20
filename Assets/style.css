@@ -1,0 +1,19 @@
+#menubar {
+    padding: 10px;
+    color: white;
+    border-bottom: 10px;
+    border-style: solid;
+    background-color: #333;
+}
+
+.links {
+    float: right;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.links, a {
+
+}
