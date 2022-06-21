@@ -1,21 +1,32 @@
+
+/* title attributes */
+#title {
+font-family: 'Times New Roman', Times, serif;
+}
+
+/* navigation bar at the top. */
 #navbar {
     padding: 10px;
     color: white;
     border-bottom: 10px;
     border-style: solid;
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
 }
 
+/* height setting for the tabs on the nav bar. */
 #navbar ul {
     height: 30px
 }
 
+/* specific settings for nav bar tabs */
 #navbar ul li {
     display: inline-block;
     float: right;
-    list-style-type: none;    overflow: hidden;
+    list-style-type: none;
+    overflow: hidden;
 }
 
+/* specific settings for nav bar tabs */
 #navbar ul li a {
     color: white;
     padding: 14px 16px;
@@ -23,7 +34,57 @@
     text-decoration: none;
 }
 
+/* hover function for nav bar tabs */
 #navbar ul li a:hover {
-    background-color: #111;
-    padding: 20px 20px 20px 20;
+    background-color: rgb(84, 84, 84);
   }
+
+  
+#sidebar {
+    border: solid;
+    height: 800px;
+    width: 420px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 16px;
+}
+
+#sidebar h2 {
+    text-align: center;
+}
+
+#sidebar h3 {
+    text-align: center;
+}
+
+#c-heading {
+    position: absolute;
+    left: 400px;
+
+}
+
+#body {
+    position: relative;
+    top: 20px;
+    display: flex;
+}
+
+.cats {
+    border: 1px solid;
+    border-color: black;
+    text-align: center;
+    margin: 50px;
+    padding: 50px
+    justify-content: flex-start;
+}
+
+.cats ul {
+    text-align: center;
+}
+
+.cats li {
+    list-style-type: none;
+}
+
