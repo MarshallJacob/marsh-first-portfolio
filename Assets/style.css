@@ -39,52 +39,59 @@ font-family: 'Times New Roman', Times, serif;
     background-color: rgb(84, 84, 84);
   }
 
-  
-#sidebar {
-    border: solid;
-    height: 800px;
-    width: 420px;
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    overflow-x: hidden;
-    padding-top: 16px;
-}
-
-#sidebar h2 {
-    text-align: center;
-}
-
-#sidebar h3 {
-    text-align: center;
-}
-
-#c-heading {
-    position: absolute;
-    left: 400px;
-
-}
-
-#body {
-    position: relative;
-    top: 20px;
+/* side bar band section settings. */
+.sidebar {
     display: flex;
+    flex-direction: column;
+    float: right;
+    min-height: 400vh;
+    width: 405px;
+    border-left: solid black;
+    text-align: center;
 }
 
+/* Cntering for main body headers */
+.c-heading {
+    text-align: center;
+}
+
+/* Work flex box to shape content */
+.work-section {
+    display: flex;
+    flex-direction: column;
+    padding: 160px;
+}
+
+/* General children flex box settings */
+.work-box {
+    align-self: flex-start;
+    border: solid;
+    padding: 150px;
+}
+
+/* Individual positioning for middle box */
+#work-box2 {
+    align-self: flex-end;
+}
+
+/* General parent flex box settings */
+.career {
+    display: flex;
+    flex-direction: column;
+}
+
+/* General children flex box settings */
 .cats {
-    border: 1px solid;
-    border-color: black;
-    text-align: center;
-    margin: 50px;
-    padding: 50px
-    justify-content: flex-start;
+    border: solid;
+    padding: 50px 100px;
 }
 
-.cats ul {
-    text-align: center;
+#info {
+    border-bottom: solid;
 }
 
-.cats li {
-    list-style-type: none;
+.d-info li {
+list-style-type: none;
+display: inline;
+padding-left: 200px;
 }
-
