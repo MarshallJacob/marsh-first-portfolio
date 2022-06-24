@@ -50,27 +50,44 @@ font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
-/* Cntering for main body headers */
+.sidebar p {
+    padding: 15px;
+}
+
+/* Centering and padding for main body headers */
 .c-heading {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+.first-app {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.first-app #main-ph {
     text-align: center;
 }
 
 /* Work flex box to shape content */
-.work-section {
+.app-section {
     display: flex;
     flex-direction: column;
-    padding: 160px;
+    padding-left: 60px;
+    padding-right: 60px
 }
 
 /* General children flex box settings */
-.work-box {
+.app-box {
     align-self: flex-start;
     border: solid;
     padding: 150px;
 }
 
 /* Individual positioning for middle box */
-#work-box2 {
+#app-box2 {
     align-self: flex-end;
 }
 
@@ -78,6 +95,7 @@ font-family: 'Times New Roman', Times, serif;
 .career {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 /* General children flex box settings */
