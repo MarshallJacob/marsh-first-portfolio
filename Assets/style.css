@@ -2,15 +2,24 @@
 /* title attributes */
 #title {
 font-family: 'Times New Roman', Times, serif;
+color: black;
+}
+
+/* default settings */
+body {
+    color: rgb(249 242 217);
+    margin: 0;
+    background: url("./Images/backround.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 /* navigation bar at the top. */
 #navbar {
     padding: 10px;
-    color: white;
-    border-bottom: 10px;
     border-style: solid;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(5 26 28);
 }
 
 /* height setting for the tabs on the nav bar. */
@@ -41,17 +50,24 @@ font-family: 'Times New Roman', Times, serif;
 
 /* side bar band section settings. */
 .sidebar {
+    background-color: #735041;
     display: flex;
     flex-direction: column;
     float: right;
-    min-height: 400vh;
+    height: 200vh;
     width: 405px;
-    border-left: solid black;
     text-align: center;
 }
 
+/* sidebar text positioning */
 .sidebar p {
     padding: 15px;
+}
+
+/* Social media links for the band */
+#side-links {
+    display: inline;
+    margin: 15px;
 }
 
 /* Centering and padding for main body headers */
@@ -61,14 +77,28 @@ font-family: 'Times New Roman', Times, serif;
     padding-top: 20px;
 }
 
+/* First app settings */
 .first-app {
     font-size: 20px;
     display: flex;
-    justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   row-gap: 20px;
 }
 
-.first-app #main-ph {
-    text-align: center;
+/* Settings for the First app box */
+#main-ph {
+    padding: 150px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #b9c8d5;
+}
+
+/* Hover function for First app box */
+#main-ph:hover {
+    box-shadow: 10px 10px #735041;
+    cursor: pointer;
 }
 
 /* Work flex box to shape content */
@@ -76,14 +106,21 @@ font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     padding-left: 60px;
-    padding-right: 60px
+    padding-right: 60px;
+    row-gap: 20px;
 }
 
 /* General children flex box settings */
 .app-box {
     align-self: flex-start;
-    border: solid;
     padding: 150px;
+    background-color: #b9c8d5;
+}
+
+/* Hover function for individual app boxes */
+.app-box:hover {
+    box-shadow: 10px 10px #735041;
+    cursor: pointer;
 }
 
 /* Individual positioning for middle box */
@@ -100,14 +137,16 @@ font-family: 'Times New Roman', Times, serif;
 
 /* General children flex box settings */
 .cats {
-    border: solid;
     padding: 50px 100px;
+    background-color: #b9c8d5;
 }
 
+/* info section */
 #info {
     border-bottom: solid;
 }
 
+/*  layout for info */
 .d-info li {
 list-style-type: none;
 display: inline;
