@@ -9,7 +9,7 @@ color: black;
 body {
     color: rgb(249 242 217);
     margin: 0;
-    background: url("./Images/backround.jpg");
+    background: url("Images/backround.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
