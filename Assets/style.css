@@ -70,6 +70,13 @@ body {
     margin: 15px;
 }
 
+/* Hide side bar when view port shrinks */
+@media only screen and (max-width:800px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 /* Centering and padding for main body headers */
 .c-heading {
     text-align: center;
@@ -140,6 +147,13 @@ body {
     padding: 50px 100px;
     background-color: #b9c8d5;
 }
+
+/* #carmaximg {
+    height: 200px;
+    width: 200px;
+    position: relative; left: 370px;top: -150px;
+} */
+
 
 /* info section */
 #info {
